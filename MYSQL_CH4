@@ -10,3 +10,14 @@ From film f INNER JOIN language l
 On f.language_id = l.language_id
 Order by f.title ASC
 Limit 10;
+/********************************************************
+Query 2: Compound Join Condition
+• write a query that produces the following output displaying customers with an actor name
+• tables: customer, actor
+• sort by customer name
+ *************************************************************/
+ SELECT CONCAT(a.last_name, ', ', a.first_name) as customer_name, 
+ CONCAT(a.last_name, ', ', a.first_name) as actor_name
+ FROM actor a JOIN customer c
+ ON a.last_name = c.last_name
+ AND a.first_name = c.first_name;
