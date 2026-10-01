@@ -1,1 +1,7 @@
+SELECT f.film_id, f.title, f.description, f.language_id, l.name
+From film f INNER JOIN language l
+On f.language_id = l.language_id
+Order by f.title ASC
+Limit 10;
 
+ 
