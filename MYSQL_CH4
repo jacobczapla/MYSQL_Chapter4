@@ -135,6 +135,8 @@ SELECT customer_id, rental_id, rental_date, 'OUT' AS status
 UNION
 SELECT customer_id, rental_id, rental_date, 'IN' AS status
 		FROM rental
+	WHERE customer_id = 9 AND return_date IS NOT NULL
+ORDER BY rental_date;
 /*******************************************************
 Query 12: Full Outer Join
 • rewrite query 7 as a full outer join
@@ -151,6 +153,3 @@ FROM film f
 	RIGHT JOIN language l
 		ON f.language_id = l.language_id
 ORDER BY language_id DESC, title ASC;
-	WHERE customer_id = 9 AND return_date IS NOT NULL
-ORDER BY rental_date;
-
