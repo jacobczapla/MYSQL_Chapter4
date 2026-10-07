@@ -28,40 +28,40 @@ Retrieving data from multiple tables
 - Full Outer Join
 ## Browser Output Example
 ##Query 1
-![Project Logo](assets/query1_4.png)
+![Project Logo](Assets/query1_4.png)
 
 ##Query 2
-![Project Logo](assets/query2_4.png)
+![Project Logo](Assets/query2_4.png)
 
 ##Query 3
-![Project Logo](assets/query3_4.png)
+![Project Logo](Assets/query3_4.png)
 
 ##Query 4
-![Project Logo](assets/query4_4.png)
+![Project Logo](Assets/query4_4.png)
 
 ##Query 5
-![Project Logo](assets/query5_4.png)
+![Project Logo](Assets/query5_4.png)
 
 ##Query 6
-![Project Logo](assets/query6_4.png)
+![Project Logo](Assets/query6_4.png)
 
 ##Query 7
-![Project Logo](assets/query7_4.png)
+![Project Logo](Assets/query7_4.png)
 
 ##Query 8
-![Project Logo](assets/query8_4.png)
+![Project Logo](Assets/query8_4.png)
 
 ##Query 9
-![Project Logo](assets/query9_4.png)
+![Project Logo](Assets/query9_4.png)
 
 ##Query 10
-![Project Logo](assets/query10_4.png)
+![Project Logo](Assets/query10_4.png)
 
 ##Query 11
-![Project Logo](assets/query11_4.png)
+![Project Logo](Assets/query11_4.png)
 
 ##Query 12
-![Project Logo](assets/query12_4.png)
+![Project Logo](Assets/query12_4.png)
 
 [Back to Top](#single-query)
 
