@@ -45,3 +45,15 @@ FROM staff s
 		ON a.city_id = c1.city_id
 	JOIN country c2
 		ON c1.country_id = c2.country_id
+/************************************************************
+Query 5: Implicit Inner Join
+• Convert query 4 from an explicit join to an implicit join.
+• Result set will be the same.
+NOTE: The following StackOverflow explains why you should NOT to use implicit (comma JOIN) syntax
+****************************************************************/
+SELECT s.staff_id,
+       CONCAT(s.last_name, ' , ', s.first_name) AS staff_name, s.email, s.store_id, a.district, c1.city, c2.country
+FROM staff s, address a, city c1, country c2
+WHERE s.address_id = a.address_id
+  AND a.city_id = c1.city_id
+  AND c1.country_id = c2.country_id;
