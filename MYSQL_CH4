@@ -57,3 +57,19 @@ FROM staff s, address a, city c1, country c2
 WHERE s.address_id = a.address_id
   AND a.city_id = c1.city_id
   AND c1.country_id = c2.country_id;
+/*****************************************************************
+Query 6: Left Outer Join
+• write a query that produces the following output displaying all titles that have never been rented
+• using a LEFTER OUTER JOIN
+• sort by title
+• tables: film, inventory, and rental
+*******************************************************/
+SELECT f.film_id, f.title, rental_id, rental_date
+FROM film f LEFT JOIN inventory i
+		ON f.film_id = i.film_id
+	LEFT JOIN rental r
+     ON i.inventory_id = r.inventory_id
+WHERE r.rental_id IS NULL
+AND r.rental_date IS NULL
+ORDER BY title;
+
