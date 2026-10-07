@@ -21,3 +21,27 @@ Query 2: Compound Join Condition
  FROM actor a JOIN customer c
  ON a.last_name = c.last_name
  AND a.first_name = c.first_name;
+/***********************************************************
+Query 3: Self-Join
+• write a query that produces the following output for customers with the same first name
+• tables: customer
+• sort by first name and last name
+*****************************************************/
+Select c1.customer_id, c1.store_id, c1.first_name, c1.last_name
+From customer c1 JOIN customer c2
+On c1.first_name = c2.first_name and c1.last_name <> c2.last_name
+Order By c1.first_name, c1.last_name ASC;
+/******************************************************
+Query 4: More than two tables
+• Write a query that produces the following output displaying the staff’s address
+• tables: staff, address, city, country
+• sort by last name and first name
+********************************************/
+SELECT staff_id, CONCAT(s.last_name, ' , ', s.first_name) AS staff_name, email, store_id, a.district, city, country
+FROM staff s
+	JOIN address a
+		ON s.address_id = a.address_id
+	JOIN city c1
+		ON a.city_id = c1.city_id
+	JOIN country c2
+		ON c1.country_id = c2.country_id
